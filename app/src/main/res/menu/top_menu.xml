@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/refresh"
+        android:title="Refresh"
+        android:icon="@drawable/ic_reload_white"
+        app:showAsAction="always"></item>
+    <item android:id="@+id/count_weight"
+        android:title="Count -> Weight"
+        ></item>
+    <item android:id="@+id/count_length"
+        android:title="Count -> Length"
+        ></item>
+    <item android:id="@+id/length_wt_count"
+        android:title="Length, Weight -> Count"
+        ></item>
+    <item android:id="@+id/fabric_math"
+        android:title="Fabric Calc."
+        ></item>
+    <item android:id="@+id/useful"
+        android:title="Unit Converter"
+        ></item>
+    <item android:id="@+id/rate_btn"
+        android:title="Rate Count Koto"></item>
+    <item android:id="@+id/about"
+        android:title="About"
+        ></item>
+    <item android:id="@+id/exit_app"
+        android:title="Exit"></item>
+
+</menu>
