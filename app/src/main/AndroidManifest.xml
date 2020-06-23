@@ -9,13 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".weight_length2count"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".useful_units"  android:parentActivityName=".MainActivity"/>
-        <activity android:name=".fabric_calc" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".count2length" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".count2weight" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".About_activity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".customSettings"
+            android:parentActivityName=".MainActivity"
+            ></activity>
+        <activity
+            android:name=".weight_length2count"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".useful_units"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".fabric_calc"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".count2length"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".count2weight"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".About_activity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/SplashScreen">

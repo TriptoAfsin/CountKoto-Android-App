@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">CountKoto</string>
     <string name="app_verion">App Version: 2.5</string>
-    <string name="btn_txt">Enable Dark Theme</string>
+    <string name="btn_txt">Enable Light Theme</string>
 </resources>

@@ -1,8 +1,10 @@
 package newcampusa.newproject.countkoto;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,12 +25,28 @@ public class MainActivity extends AppCompatActivity {
     private long backPressedTime ;
     private Toast backToast;
 
+    private SharedPreferences AppSettingsPref;
+    private Boolean isNightMode;
+    private SharedPreferences.Editor mEditor;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().setSubtitle("All-in-one Textile Count Solution");
+
+        AppSettingsPref = getSharedPreferences("AppSettings",0);
+        isNightMode = AppSettingsPref.getBoolean("NightMode", false);
+        mEditor = AppSettingsPref.edit();
+
+        if(isNightMode){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        }
+        else{
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
 
         Ne = (EditText)findViewById(R.id.editText_ne);
         Nm = (EditText)findViewById(R.id.editText_nm);
@@ -465,6 +483,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.about:
                 Intent intent = new Intent(MainActivity.this, About_activity.class);
                 startActivity(intent);
+                break;
+            case R.id.settings:
+                Intent intent10 = new Intent(MainActivity.this, customSettings.class);
+                startActivity(intent10);
                 break;
             case R.id.refresh:
                 Intent intent2 = new Intent(MainActivity.this, MainActivity.class);

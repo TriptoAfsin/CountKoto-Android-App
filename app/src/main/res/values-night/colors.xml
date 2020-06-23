@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#44BA48</color>
     <color name="colorAccent">#03A9F4</color>
     <color name="light_blue">#B3E1F6</color>
-    <color name="mainText">#000000</color>
-    <color name="mainBackground">#FFFFFF</color>
+    <color name="mainText">#FFFFFF</color>
+    <color name="mainBackground">#2C2C2C</color>
     <color name="altText">#FFFFFF</color>
 </resources>

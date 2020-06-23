@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="This app was developed by: "
-            android:textColor="#050505"
+            android:textColor="@color/mainText"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
@@ -30,7 +32,7 @@
             android:layout_marginTop="8dp"
             android:text="TriptoAfsin"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="@color/mainText"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="E-mail: "
-            android:textColor="#1C1A1A"
+            android:textColor="@color/mainText"
             android:textSize="17sp"
             app:layout_constraintEnd_toStartOf="@+id/email"
             app:layout_constraintHorizontal_bias="0.911"
@@ -79,7 +81,7 @@
             android:layout_height="wrap_content"
             android:text="@string/app_verion"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="@color/mainText"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
